@@ -1,0 +1,31 @@
+SELECT DISTINCT * FROM AS_CONSUMER_COMPLAINTS;
+SELECT DISTINCT PRODUCT_NAME FROM AS_CONSUMER_COMPLAINTS; ----- to check any specific coulmn.
+
+SELECT DISTINCT issue FROM AS_CONSUMER_COMPLAINTS;
+
+SELECT DISTINCT * FROM AS_CONSUMER_COMPLAINTS WHERE PRODUCT_NAME LIKE '%ACCOUNT%';---- LIKE FUNCTION IS USED FOR FILTERING ANY PARTICULAR WORD.
+
+select distinct * from AS_CONSUMER_COMPLAINTS where product_name like 'bank%';
+use database test_database;
+SELECT DISTINCT * FROM transport_vendor_list;
+select distinct tranporter_type from transport_vendor_list;
+
+use warehouse test_warehouse;
+
+use database test_database;
+
+select distinct * from transport_vendor_list;
+
+select distinct transporter_name from transport_vendor_list;
+
+select distinct route from transport_vendor_list;
+
+SELECT DISTINCT * FROM transport_vendor_list WHERE transporter_NAME LIKE 'xpress';
+
+select distinct *from transport_vendor_list WHERE transporter_type like '%haul%';
+
+select distinct transporter_type from transport_vendor_list;
+
+describe table transport_vendor_list;
+
+select distinct transporter_name from transport_vendor_list limit 2;
